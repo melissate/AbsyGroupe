@@ -1,0 +1,679 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+.social-icons, .user-actions {
+    padding: 10px 0; /* Padding pour l'espacement */
+}
+
+.social-icons a, .user-actions a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.social-icons {
+    float: left; /* Aligner les icônes sociales à gauche */
+}
+
+.user-actions {
+    float: right; /* Aligner les icônes de recherche, login et panier à droite */
+}
+
+/* Style pour le conteneur de la section */
+.top-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 5px 0;
+}
+
+/* Clear floats */
+.top-bar::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 50, 25, 0.7); 
+    z-index: 1;
+}
+
+.carousel-caption {
+    position: absolute;
+    z-index: 2;
+}
+
+.carousel-caption .title2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 60px;
+    line-height: 1.2em;
+    font-weight: 700;
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.navbar {
+    position: absolute;
+    top: 0; /* Coller en haut de la page */
+    width: 100%; /* Assurez-vous qu'elle prend toute la largeur */
+    z-index: 1000; /* Un z-index élevé pour qu'elle soit au-dessus des autres éléments */
+    background-color: transparent; /* Couleur de fond transparente */
+    border: none; /* Supprimer la bordure si elle existe */
+}
+
+.navbar-dark .navbar-brand, 
+.navbar-dark .nav-link {
+    color: #fff !important;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+
+.navbar-nav li a {
+    color: #ffffff !important; /* Couleur des liens */
+    text-transform: uppercase; /* Majuscules */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px; 
+}
+
+
+
+/* Pseudo-élément ::after pour créer la ligne de surlignage */
+.navbar-nav li a::after {
+    content: ''; /* Nécessaire pour afficher le pseudo-élément */
+    position: absolute;
+    left: 0;
+    bottom: 0; /* Positionné juste sous le texte */
+    width: 0; /* Initialement, la ligne est invisible */
+    height: 2px; /* Épaisseur de la ligne */
+    background-color: #ffffff; /* Couleur verte pour la ligne de surlignage */
+    transition: width 0.3s ease; /* Transition pour l'animation de la ligne */
+}
+
+/* Effet au survol */
+.navbar-nav li a:hover::after {
+    width: 100%; /* La ligne se déploie sur toute la largeur du texte au survol */
+}
+
+header .carousel-inner .item {
+    height: 100vh;   
+}
+
+.navbar-inverse {
+    background-color: transparent !important; /* Assurez-vous que la navbar inverse est également transparente */
+    border-color: transparent; /* Supprimer la couleur de bordure si elle existe */
+}
+
+.navbar-inverse .navbar-brand {
+    font-size: 35px;
+    padding: 40px 15px;
+    font-weight: 300;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    color: #ffffff !important;
+}
+
+.nav.navbar-nav.navbar-right {
+    margin: 25px 0;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.banner {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.carousel-caption {
+    padding-bottom: 50px;
+    font-family: poppins;
+}
+
+.carousel-caption h2 span {
+    color: #ffffff;
+}
+
+.carousel-caption a {
+    background: #1A661A;
+    padding: 15px 35px;
+    display: inline-block;
+    margin-top: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 25px;
+}
+
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control.left {
+    background-image: none;
+}
+
+.carousel-indicators .active {
+    background-color: #EDBB00;
+    border-color: #EDBB00;
+}
+
+.navbar-brand-wrapper {
+    text-align: center;
+    margin-top: -3px; /* Remonte le tout un peu vers le haut */
+}
+
+
+.navbar-brand-subtext {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 300; /* Texte plus fin pour "agrobusiness" */
+    position: relative;
+    top: -10px; /* Réduit l'espace entre "AbsyGroupe" et "agrobusiness" */
+}
+
+
+
+/* Responsive css */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-caption {
+        padding-bottom: 350px;
+    }
+    .carousel-caption h2 {
+        font-size: 50px;
+    }
+
+    .carousel-caption .title2 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-inverse .navbar-brand {
+        font-size: 30px;
+        padding: 20px 15px;
+    }
+    .navbar-collapse {
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .carousel-caption {
+        padding-bottom: 120px;
+    }
+    .carousel-caption h2 {
+        font-size: 25px;
+    }
+    .carousel-caption h3 {
+        font-size: 18px;
+    }
+    .carousel-caption a {
+        padding: 10px 25px;
+    }
+    .carousel-caption .title2 {
+        font-size: 30px;
+    }
+}
+
+
+/* Style de la section "À propos de nos services" */
+.services-section {
+	background-color: #2E4E2A; 
+    background-image: url('Banner.png'); /* Image de motif floral blanc */
+    background-size: contain; 
+    background-repeat: repeat;
+    background-position: center;
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+	
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+/* Style pour les cartes */
+.service-card {
+    background-color: #41663C;; /* Fond vert différent pour les cartes */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* L'effet de survol pour rendre les cartes interactives */
+}
+
+.service-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #fff; /* Couleur blanche pour les icônes */
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style de la section "Élevage" */
+.elevage-section {
+    background-color: #fff; /* Fond blanc */
+    padding: 50px 0;
+    text-align: center;
+    color: #333;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+/* Style pour la galerie asymétrique */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Agrandissement léger au survol */
+}
+
+.gallery-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+.actus-content {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .section-header h2 {
+    font-size: 26px;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .section-header p {
+    color: #666;
+    margin-bottom: 22px;
+    text-align: center;
+  }
+  
+  .actus-content {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .big-news {
+    flex: 0.6; /* Réduit la largeur pour qu'elle soit un peu plus petite que les éléments de droite */
+    position: relative;
+  }
+  
+  
+  .big-news img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .big-news .news-details {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    width: calc(100% - 20px);
+  }
+  
+
+  .small-news-carousel {
+    flex: 0.3; /* Ajuste la largeur de la section de droite pour qu'elle soit alignée avec la grande image */
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    overflow-y: auto;
+    max-height: 465px;
+    scrollbar-width: thin; /* Pour Firefox : réduit la largeur de la barre */
+    scrollbar-color: #2E4E2A #eae9e9; /* Pour Firefox : couleur de la barre et de l'arrière-plan */
+    padding-right: 8px;
+  
+  }
+
+  .small-news-carousel::-webkit-scrollbar {
+    padding-left: 10px;
+  }
+
+    /* Personnalisation pour Webkit (Chrome, Safari) */
+    .small-news-carousel::-webkit-scrollbar {
+    width: 10px; /* Largeur de la barre de défilement */
+  }
+  
+  .small-news-carousel::-webkit-scrollbar-track {
+    background: #ddd; /* Couleur de l'arrière-plan de la barre */
+    border-radius: 10px; /* Coins arrondis */
+  }
+  
+  .small-news-carousel::-webkit-scrollbar-thumb {
+    background-color: #4CAF50; /* Couleur de la barre elle-même */
+    border-radius: 10px; /* Coins arrondis */
+    border: 2px solid #ddd; /* Bordure pour espacer légèrement la barre du track */
+  }
+  
+  .small-news-carousel::-webkit-scrollbar-thumb:hover {
+    background-color: #3e8e41; /* Changement de couleur au survol pour un effet interactif */
+  }
+  
+  .news-item {
+    position: relative;
+  }
+  
+  .news-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .news-item iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  
+  
+  .news-item .news-details {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 8px;
+    width: calc(100% - 20px);
+  }
+
+  .news-item .news-details h4{
+    font-size: 13px;
+  }
+
+  .news-item .news-details P{
+    font-size: 9px;
+  }
+  
+/* Responsivité pour mobile */
+@media (max-width: 768px) {
+    .actus-content {
+      flex-direction: column;
+    }
+  
+    .big-news {
+      order: 1;
+      width: 100%;
+    }
+  
+    .small-news-carousel {
+      order: 2;
+      flex-direction: row;
+      overflow-x: auto;
+      gap: 5px;
+      max-height: unset;
+      max-width: 100%;
+    }
+  
+    .news-item {
+      flex: 1 0 80%;
+      max-width: 80%;
+    }
+  }
+  
+  /* Styles pour le pop-up */
+  .popup {
+    display: none; /* Cacher le pop-up par défaut */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fond sombre avec transparence */
+    z-index: 1000; /* Au-dessus des autres éléments */
+}
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+}
+.close {
+    cursor: pointer;
+    float: right;
+    font-size: 24px;
+    margin-top: -10px;
+}
+iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+.actus-section {
+    margin: 20px;
+}
+.big-news img,
+.small-news-carousel img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* 
+.map-section {
+    position: absolute; /* Changer de 'absolute' à 'relative' pour ne pas chevaucher le footer 
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    padding: 60px 0 0 0;
+    margin-bottom: 20px; /* Ajouter un espace sous la carte pour séparer la carte et le footer 
+} */
+
+.map-section {
+    position: relative; /* Remettre la carte dans le flux de la page */
+    width: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0; /* Supprimer tout espace ou marge */
+}
+
+.container-footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 30px 0 10px 0;
+    text-align: center;
+    background-color: #41663C;
+    color: #ffffff; 
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.container-footer a {
+    color: #ffffff; /* Texte gris clair */
+
+}
+
+
+
+.footer-content {
+    display: flex; /* Utiliser Flexbox pour une disposition en colonnes */
+    justify-content: space-around; /* Espacer les colonnes uniformément */
+    padding: 0 20px; /* Espacement horizontal pour éviter le chevauchement */
+}
+
+.footer-logo {
+    flex: 1; /* Laisser cette colonne prendre un espace équitable */
+    margin-right: 20px; /* Espacement à droite pour séparer des autres colonnes */
+    PADDING-TOP: 50px;
+}
+.container-footer h5{
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.footer-logo-image {
+    max-width: 150px; /* Limiter la largeur du logo */
+    height: auto; /* Garder les proportions */
+    padding-bottom: 10px;
+}
+
+.footer-contact, .footer-links {
+    flex: 1; /* Chaque colonne prendra un espace équitable */
+    margin-left: 20px; /* Espacement à gauche pour séparer des autres colonnes */
+}
+
+.footer-links a {
+    display: block; /* Afficher chaque lien sur une nouvelle ligne */
+    color: #CCCCCC; /* Couleur des liens */
+    text-decoration: none; /* Enlever le soulignement */
+    margin: 5px 0; /* Espacement entre les liens */
+}
+
+.footer-links a:hover {
+    color: #EDBB00; /* Changer la couleur au survol */
+}
+
+hr {
+    border-top: 1px solid #333333; /* Couleur de la ligne de séparation */
+    margin: 20px 0; /* Espacement autour de la ligne */
+}
+
+.text-body-secondary {
+    color: #CCCCCC; /* Couleur gris clair pour le texte secondaire */
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Passer à une disposition en colonne pour les petits écrans */
+        align-items: center; /* Centrer les colonnes */
+    }
+
+    .footer-logo, .footer-contact, .footer-links {
+        margin: 10px 0; /* Espacement réduit pour les petits écrans */
+        text-align: center; /* Centrer le texte dans chaque colonne */
+    }
+
+    .footer-links a {
+        margin: 3px 0; /* Espacement réduit entre les liens */
+    }
+}
