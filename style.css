@@ -277,6 +277,8 @@ header .carousel-inner .item {
     color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
+    max-height: 200px;
+    min-height: 200px;
 }
 
 .service-card:hover {
@@ -284,13 +286,13 @@ header .carousel-inner .item {
 }
 
 .service-icon {
-    font-size: 40px;
+    font-size: 25px;
     margin-bottom: 15px;
     color: #fff; /* Couleur blanche pour les icônes */
 }
 
 .card-title {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -597,7 +599,7 @@ iframe {
     position: absolute;
     width: 100%;
     left: 0;
-    padding: 30px 0 10px 0;
+    padding: 0px 0 10px 0;
     text-align: center;
     background-color: #41663C;
     color: #ffffff; 
@@ -675,5 +677,51 @@ hr {
 
     .footer-links a {
         margin: 3px 0; /* Espacement réduit entre les liens */
+    }
+}
+
+.footer-commitments {
+    display: flex;
+    justify-content: space-around; /* Espacement égal entre les éléments */
+    align-items: center; /* Centrer les éléments verticalement */
+    background-color: #eef1f4; /* Fond doré pour la bande des engagements */
+    /* border: 5px solid #CCCCCC; */
+    padding: 15px 30px; /* Espacement interne */
+    margin-bottom: 20px; /* Espacement sous la bande */
+}
+
+.commitment-item {
+    display: flex;
+    flex-direction: column; /* Afficher les éléments en colonne (image au-dessus du texte) */
+    align-items: center; /* Centrer les éléments horizontalement */
+    text-align: center;
+    gap: 5px; /* Espacement entre l'image et le texte */
+    flex: 1; /* Distribue l'espace également entre les items */
+    max-width: 150px; /* Limiter la largeur pour chaque élément */
+}
+
+.commitment-item img {
+    width: 50px; /* Taille de l'image */
+    height: auto;
+}
+
+.commitment-item p {
+    font-size: 14px;
+    color: #000000; /* Texte en vert foncé pour contraster avec le fond */
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .footer-commitments {
+        flex-direction: column; /* Empile les éléments pour les petits écrans */
+        padding: 20px; /* Augmente le padding pour une meilleure lisibilité */
+    }
+
+    .commitment-item {
+        max-width: none; /* Permet aux éléments de s'étendre sur toute la largeur */
+        margin: 10px 0; /* Espacement entre chaque élément */
     }
 }
