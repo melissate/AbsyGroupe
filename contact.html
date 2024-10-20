@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <nav class="navbar navbar-default navbar-inverse">
+    
+
+            <div class="top-bar">
+                <div class="container">
+                    <div class="social-icons">
+                        <a href="#" class="text-body-secondary"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-body-secondary"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-body-secondary"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <div class="user-actions">
+                        <a href="#"><i class="fas fa-search"></i></a>
+                        <a href="#"><i class="fas fa-user"></i></a>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand-wrapper">
+                        <a class="navbar-brand logo" href="#">AbsyGroupe</a>
+                        <!-- <p class="navbar-brand-subtext">Agrobusiness</p> -->
+                    </div>
+                    
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="agriculture.html">Agriculture</a></li>
+                        <li><a href="">Elevage</a></li>
+                        <li><a href="#">Nos produits</a></li>
+                        <li><a href="#">Nos services</a></li>
+                        <li><a href="#">Pharmacie</a></li>
+                        <li><a href="contact.html">Nous contacter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+        <div class="item">
+            <div class="banner" style="background-image: url(https://cdn.pixabay.com/photo/2013/11/26/20/19/potato-218865_1280.jpg);">
+                <div class="overlay"></div>
+                <div class="carousel-caption">
+                    <h2 class="animated bounceInLeft title2" style="animation-delay: 1s">Optimisez Votre Agriculture!</h2>
+                    <h3 class="animated fadeInUp" style="animation-delay: 2s">Découvrez nos solutions pour un élevage sain et une production agricole prospère.</h3>
+                    <p class="animated zoomIn" style="animation-delay: 3s">
+                        <a href="#" class="contact-button">
+                            Contactez-nous <i class="fas fa-seedling"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    <div class="container page_contact mt-5">
+
+
+        <div class="row">
+            <!-- Contact Info Section -->
+            <div class="col-md-4">
+                <div class="contact-info mb-4">
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="fas fa-phone-alt fa-2x mr-2"></i>
+                        <div>
+                            <h5>Téléphone</h5>
+                            <p>(+224) 621 91 99 11</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-info mb-4">
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="fas fa-map-marker-alt fa-2x mr-2"></i>
+                        <div>
+                            <h5>Adresse</h5>
+                            <p>Zone Agro-pastorale,
+
+                        <br>Dubreka republique de Guniné</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="fas fa-envelope fa-2x mr-2"></i>
+                        <div>
+                            <h5>Email</h5>
+                            <p> absygroupe224@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form Section -->
+            <div class="col-md-8">
+                <div class="contact_content_form">
+                    <fieldset>
+                        <legend>Formulaire de contact</legend>
+                        <form action="" method="post" id="test_form">
+                            <div class="form-group">
+                                <label for="id_contact_objet_1">Objet du message:</label>
+                                <select id="id_contact_objet_1" name="id_contact_objet_1" class="form-control">
+                                    <option value="">-- Sélectionnez un élément --</option>
+                                    <option value="23">Après la réception - Retour et S.A.V</option>
+                                    <option value="21">Avant de commander</option>
+                                    <option value="22">En cours de commande</option>
+                                    <option value="24">Partenariats</option>
+                                </select>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="prenom">Votre prénom:</label>
+                                    <input type="text" name="prenom" id="prenom" class="form-control" required />
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="email">Votre mail:</label>
+                                    <input type="email" name="email" id="email" class="form-control" required />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Votre message:</label>
+                                <textarea name="message" id="message" class="form-control" rows="5" required></textarea>
+                            </div>
+
+                            <div class="g-recaptcha" data-sitekey="6LcosOYiAAAAAK8Zciq9mLkB7cCCb1buE4GmqPYH" style="margin-top: 15px;"></div>
+
+                            <button type="submit" class="btn btn-success mt-3">Envoyer</button>
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="store-info mt-5 text-center">
+        <h3>A la ferme AbsyGroupe</h3>
+        <p>Votre point de retrait commande vous accueille:</p>
+        <p><strong>Du Lundi au Vendredi :</strong> de 9h30 à 12h30 et de 14h à 19h</p>
+        <p><strong>Le Samedi :</strong> de 9h à 19h</p>
+
+        <!-- Google Map Embed -->
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2600.287120667163!2d3.158794315677197!3d50.60267227950898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c09c3ca2b45f99%3A0x44920e2b54f62683!2sDucatillon%20Lesquin!5e0!3m2!1sfr!2sfr!4v1690192997876!5m2!1sfr!2sfr"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"></iframe>
+        </div>
+    </div>
+</div>
+
+
+    <div class="container-footer">
+
+        <!-- Bande des engagements -->
+        <div class="footer-commitments">
+          <div class="commitment-item">
+              <img src="img/1.png">
+              <p>Retrait à la ferme, Retrait sous 2h</p>
+          </div>
+          <div class="commitment-item">
+              <img src="img/2.png">
+              <p>Livraison rapide en Guiné </p>
+          </div>
+          <div class="commitment-item">
+              <img src="img/3.png">
+              <p>Paiement sécurisé par OM
+                  ou virement</p>
+          </div>
+          <div class="commitment-item">
+              <img src="img/4.png">
+              <p>Aide et contact, une question ?</p>
+          </div>
+      </div>
+
+
+    <footer class="py-5 my-4">
+    
+    <div class="footer-content">
+
+
+
+        <div class="footer-logo">
+            <img src="logo.png" alt="Agroshop Logo" class="footer-logo-image"> <!-- Remplacez par le chemin réel de votre logo -->
+            <p>L'innovation au coeur de nos actions</p>
+        </div>
+
+        <div class="footer-contact">
+            <h5>Contact</h5>
+            <!-- Adresse avec icône de localisation -->
+            <p><i class="fas fa-map-marker-alt"></i> Zone Agro-pastorale, </p>
+            <p>Dubreka republique de Guniné </p>
+            
+            <!-- Téléphone avec icône de téléphone -->
+            <p><i class="fas fa-phone"></i>  (+224) 621 91 99 11</p>
+            
+            <!-- WhatsApp avec icône de WhatsApp -->
+            <p><i class="fab fa-whatsapp"></i>  (+224) 669 91 99 11</p>
+            
+            <!-- Email avec icône d'enveloppe -->
+            <p><i class="fas fa-envelope"></i> <a href="mailto:absygroupe224@gmail.com">absygroupe224@gmail.com</a></p>
+        </div>
+
+        <div class="footer-links">
+            <h5>Liens utiles</h5>
+            <a href="#" class="nav-link px-2 text-body-secondary">Accueil</a>
+            <a href="#" class="nav-link px-2 text-body-secondary">Boutique</a>
+            <a href="#" class="nav-link px-2 text-body-secondary">À propos</a>
+            <a href="#" class="nav-link px-2 text-body-secondary">Contact</a>
+            <a href="#" class="nav-link px-2 text-body-secondary">Mon Panier</a>
+            <a href="#" class="nav-link px-2 text-body-secondary">Mon Compte</a>
+        </div>
+    </div>
+
+    <hr>
+    <p class="text-center text-body-secondary">&copy; 2024 Absygroupe Agrobusiness, Inc</p>
+    </footer>
+    </div>
+
+
+
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

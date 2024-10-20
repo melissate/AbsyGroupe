@@ -278,7 +278,7 @@ header .carousel-inner .item {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
     max-height: 200px;
-    min-height: 200px;
+    /* min-height: 200px; */
 }
 
 .service-card:hover {
@@ -286,7 +286,7 @@ header .carousel-inner .item {
 }
 
 .service-icon {
-    font-size: 25px;
+    font-size: 35px;
     margin-bottom: 15px;
     color: #fff; /* Couleur blanche pour les icônes */
 }
@@ -624,7 +624,7 @@ iframe {
 .footer-logo {
     flex: 1; /* Laisser cette colonne prendre un espace équitable */
     margin-right: 20px; /* Espacement à droite pour séparer des autres colonnes */
-    PADDING-TOP: 50px;
+    /* PADDING-TOP: 50px; */
 }
 .container-footer h5{
     font-size: 15px;
@@ -645,7 +645,7 @@ iframe {
 
 .footer-links a {
     display: block; /* Afficher chaque lien sur une nouvelle ligne */
-    color: #CCCCCC; /* Couleur des liens */
+    color: #ffffff; /* Couleur des liens */
     text-decoration: none; /* Enlever le soulignement */
     margin: 5px 0; /* Espacement entre les liens */
 }
@@ -723,5 +723,104 @@ hr {
     .commitment-item {
         max-width: none; /* Permet aux éléments de s'étendre sur toute la largeur */
         margin: 10px 0; /* Espacement entre chaque élément */
+    }
+}
+
+
+
+
+
+
+
+.page_contact {
+    background: #fff; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 30px; /* Increased padding for spacious look */
+    margin: 30px auto; /* Center the container with margin auto and add space above */
+    max-width: 900px;
+    
+}
+
+
+.row {
+    margin-top: 20px; /* Space between the breadcrumb and the contact section */
+}
+
+.contact-info {
+    background: #f8f9fa; /* Light grey background for contact boxes */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding for the boxes */
+    margin-bottom: 15px; /* Margin below each box */
+}
+
+.contact-info h5 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.2rem; /* Font size for headings */
+}
+
+.contact-info p {
+    margin: 5px 0 0; /* Space above paragraph */
+    color: #666; /* Grey color for text */
+}
+
+.contact_content_form fieldset {
+    border: none; /* Remove default border */
+}
+
+legend {
+    font-size: 1.5rem; /* Font size for the legend */
+    color: #3d511c; /* Color for legend text */
+    margin-bottom: 20px; /* Space below legend */
+}
+
+.form-control {
+    border-radius: 5px; /* Rounded corners for input fields */
+    height: 40px; /* Height for input fields */
+    padding: 10px; /* Padding inside input fields */
+}
+
+textarea.form-control {
+    resize: none; /* Disable textarea resizing */
+}
+
+.btn-success {
+    background-color: #28a745; /* Green background for the button */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size for button */
+}
+
+
+
+
+.store-info {
+    background: #f8f9fa; /* Light grey background for store info */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding for the section */
+    margin-top: 30px; /* Margin above this section */
+}
+
+.store-info h3 {
+    color: #3d511c; /* Color for the store info heading */
+}
+
+.map-container {
+    margin-top: 20px; /* Space above the map */
+    text-align: center; /* Center the map */
+}
+
+.map-container iframe {
+    width: 100%; /* Full width for responsiveness */
+    height: 300px; /* Fixed height for map */
+    border: 0; /* No border */
+}
+
+/* Make the map responsive */
+@media (max-width: 768px) {
+    .map-container iframe {
+        height: 200px; /* Adjust height on smaller screens */
     }
 }
