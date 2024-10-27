@@ -216,7 +216,7 @@ header .carousel-inner .item {
         font-size: 30px;
     }
 
-    .dropdown-menu .li{
+    .dropdown-menu li{
         background-color: green;
         padding-top: 10px;
     }
@@ -247,7 +247,7 @@ header .carousel-inner .item {
         font-size: 30px;
     }
 
-    .dropdown-menu .li {
+    .dropdown-menu li {
         background-color: green;
     }
 }
