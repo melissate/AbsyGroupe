@@ -215,6 +215,11 @@ header .carousel-inner .item {
     .carousel-caption .title2 {
         font-size: 30px;
     }
+
+    .dropdown{
+        background-color: green;
+    }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -239,6 +244,10 @@ header .carousel-inner .item {
     }
     .carousel-caption .title2 {
         font-size: 30px;
+    }
+
+    .dropdown{
+        background-color: green;
     }
 }
 
@@ -354,6 +363,8 @@ header .carousel-inner .item {
 }
 
 }
+
+
 
 
 
