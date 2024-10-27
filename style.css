@@ -308,22 +308,25 @@ header .carousel-inner .item {
     background-color: #08080800;
 }
 
-/* Style de base pour le menu déroulant */
-.dropdown-menu {
-    background-color: #1A661A; /* Couleur de fond claire */
-    padding: 10px 0;
-    min-width: 135px;
-    text-align: center; /* Centrer le texte */
-    display: none; /* Cacher par défaut */
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-}
 
-/* Afficher le menu déroulant lorsqu'on survole le parent */
-.dropdown:hover .dropdown-menu {
-    display: block;
+/* Style de base pour le menu déroulant */
+@media only screen and (min-width: 992px) {
+    .dropdown-menu {
+        background-color: #1A661A; /* Couleur de fond claire */
+        padding: 10px 0;
+        min-width: 135px;
+        text-align: center; /* Centrer le texte */
+        display: none; /* Cacher par défaut */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+    }
+
+    /* Afficher le menu déroulant lorsqu'on survole le parent */
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
 }
 
 /* Style des liens dans le menu déroulant */
@@ -350,9 +353,6 @@ header .carousel-inner .item {
     border: none;
     cursor: pointer;
 }
-
-
-
 
 
 
