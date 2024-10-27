@@ -327,9 +327,8 @@ header .carousel-inner .item {
     .dropdown:hover .dropdown-menu {
         display: block;
     }
-}
 
-/* Style des liens dans le menu déroulant */
+    /* Style des liens dans le menu déroulant */
 .dropdown-menu li a {
     color: #333; /* Texte noir */
     font-size: 14px; /* Taille de police lisible */
@@ -353,6 +352,9 @@ header .carousel-inner .item {
     border: none;
     cursor: pointer;
 }
+
+}
+
 
 
 
